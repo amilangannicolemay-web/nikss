@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('data:image/jpeg;base64,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') no-repeat center center/cover;
+    }
+
+    .profile-card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      text-align: center;
+      padding: 30px 20px;
+      max-width: 300px;
+      transition: transform 0.3s;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .profile-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #4a90e2;
+    }
+
+    .profile-card h2 {
+      margin: 10px 0 5px;
+      font-size: 22px;
+      color: #333;
+    }
+
+    .profile-card p {
+      font-size: 14px;
+      color: #777;
+      line-height: 1.4;
+    }
+
+    .profile-card button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      background: #4a90e2;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .profile-card button:hover {
+      background: #357ab8;
+    }
+
+    @media (max-width: 400px) {
+      .profile-card {
+        padding: 20px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-card">
+    <img src="https://cdn.vectorstock.com/i/1000v/78/16/cute-anime-girl-with-pink-hair-vector-47117816.jpg" alt="Profile Image">
+    <h2>izz nikk</h2>
+    <p>Nicole May Amilangan</p>
+    <button>BSIT 3F</button>
+  </div>
+
+</body>
+</html>
